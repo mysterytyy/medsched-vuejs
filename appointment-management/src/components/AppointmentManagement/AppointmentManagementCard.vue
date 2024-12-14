@@ -8,7 +8,7 @@
 
             </div>
             <div class="flex justify-center w-3/6 bg-transparent">   
-                <img src="../../assets/appointment.png" class="w-96">
+                <img src="/images/appointment.png" class="w-96">
             </div>
         </div>  
         <AppointmentChooseBookModal :visible="showModal" @close="showModal = false" />

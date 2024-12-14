@@ -1,8 +1,8 @@
 <template>
     <div class="mt-32 w-full flex justify-center h-full">
         <div class="w-4/5 bg-[#E3E4E6] rounded-3xl flex shadow-2xl">
-            <div class="w-1/2 bg-[#E3E4E6] z-10 rounded-tl-3xl rounded-bl-3xl rounded-br-3xl">
-                <img class="rounded-3xl m-4 w-11/12" src="https://img.freepik.com/free-vector/appointment-booking-with-calendar-smartphone_23-2148545727.jpg?t=st=1733992804~exp=1733996404~hmac=c64f58a5924fcaa344dfc7e8f26f9982fef349cdd5c4016d0380eb598cb44722&w=740">
+            <div class="w-1/2 bg-[#E3E4E6] z-10 rounded-tl-3xl rounded-bl-3xl rounded-br-3xl flex items-center justify-center">
+                <img class="rounded-3xl m-4 w-9/10" src="/images/walk-in_appointment.png">
             </div>
             <div class="w-1/2 bg-white h-full ml-18 z-20 rounded-r-3xl rounded-tl-3xl shadow-2xl">
                 

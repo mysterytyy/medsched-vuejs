@@ -3,6 +3,8 @@ import AppointmentPagesLogin from "@/components/AppointmentManagement/Appointmen
 import AppointmentPagesIndex from "@/components/AppointmentManagement/AppointmentPages/AppointmentPagesIndex.vue";
 import AppointmentPagesWalkInBook from "@/components/AppointmentManagement/AppointmentPages/AppointmentPagesWalkInBook.vue";
 import AppointmentPagesMakeAppointment from "@/components/AppointmentManagement/AppointmentPages/AppointmentPagesMakeAppointment.vue";
+import AppointmentPagesDashboard from "@/components/AppointmentManagement/AppointmentPages/AppointmentPagesDashboard.vue";
+import AppointmentPagesCheckAppointment from "@/components/AppointmentManagement/AppointmentPages/AppointmentPagesCheckAppointment.vue";
 
 const routes = [
     {
@@ -24,7 +26,20 @@ const routes = [
         path: '/make-appointment',
         name: 'AppointmentMakeAppointment',
         component: AppointmentPagesMakeAppointment
-    }
+    },
+    {
+        path: '/dashboard',
+        name: 'AppointmentDashboard',
+        component: AppointmentPagesDashboard
+        
+    },
+    {
+        path: '/appointment',
+        name: 'AppointmentCheckAppointment',
+        component: AppointmentPagesCheckAppointment
+        
+    },
+
 
 ];
 
