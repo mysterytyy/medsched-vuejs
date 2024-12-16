@@ -11,7 +11,7 @@
                     <p class="font-['Noto_Serif'] font-light mt-5 text-left">Please fill in the patient's information below. </p>
                 </div>
                 <form action="" class="p-3 w-full mt-5">
-                    <div class="w-full flex flex-col items-center">
+                    <div v-if="currentStep === 1" class="w-full flex flex-col items-center">
                         <div class="flex flex-row w-full">
                             <div class="flex flex-row text-left w-full mb-4 p-3 items-center">
                                 <div class="w-4/5 flex flex-col ">
@@ -82,8 +82,82 @@
                             <label for="acceptdataprivacy" class="ml-2 ">Accept Data Privacy</label>
                         </div>
                     </div>
-                    <div class="w-full mt-5">
-                        <button type="submit" class="bg-black w-3/4 rounded-xl p-3 text-white mt-3 hover:text-white hover:bg-sky-500 transition duration-300 hover:-translate-y-1 hover:scale-110 ease-in-out font-medium ">Submit</button>
+                    <div 
+                    v-if="currentStep === 2"
+                    >
+                    <div>
+                        <div class="w-full flex flex-col items-center">
+                            <div class="flex flex-row w-full mb-4 p-3">
+                                <div class="w-4/5 flex flex-col">
+                                    <label for="birthplace" class="text-left mb-2">Birth Place</label>
+                                    <input required type="text" name="birthplace" class="w-3/4 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5">
+                                </div>
+                                <div class="w-4/5 flex flex-col">
+                                    <label for="currentaddress" class="text-left mb-2">Current Address Sitio/Subd/Street:</label>
+                                    <input required type="text" name="currentaddress" class="w-3/4 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full flex flex-col ">
+                            <div class="flex flex-col w-full mb-4 p-3">
+                            <label for="zipcode" class="text-left">Zip code / Province / Municipality</label>
+                            <select name="zipcode" id="zipcode" class="w-3/4 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5">
+                                <option value="cebu-city">6000 - Cebu City</option>
+                                <option value="cebu-city-catmon">6006 - Cebu, Catmon</option>
+                                <option value="cebu-city-compostela">6003 - Cebu, Compostela</option>
+                            </select>
+                            </div>
+                        </div>
+                        <div class="w-full flex flex-col items-center">
+                            <div class="flex flex-row w-full mb-4 p-3">
+                                <div class="w-4/5 flex flex-col">
+                                    <label for="province" class="text-left mb-2">Province</label>
+                                    <input required type="text" name="province" class="w-3/4 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5">
+                                </div>
+                                <div class="w-4/5 flex flex-col">
+                                    <label for="dateofbirth" class="text-left mb-2">Municipality</label>
+                                    <input required type="text" name="dateofbirth" class="w-3/4 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full flex flex-col">
+                            <div class="flex flex-col w-full mb-4 p-3">
+                            <label class="text-left" for="barangay">Barangay</label>
+                            <select name="zipcode" id="zipcode" class="w-2/4 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5">
+                                <option value="apas">Apas</option>
+                                <option value="banilad">Banilad</option>
+                                <option value="carreta">Carreta</option>
+                            </select>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <div class="w-full mt-5 flex justify-between ">
+                        <div class="w-full flex justify-center">
+                            <button
+                                v-if="currentStep > 1"
+                                type="button"
+                                @click="prevStep"
+                                class="bg-sky-500 mr-2 py-2 px-4 rounded-lg w-2/4 text-white mt-3  hover:bg-sky-500 transition duration-300 font-medium "
+                                >Previous</button>
+
+                                <button
+                                v-if="currentStep < totalSteps"
+                                type="button"
+                                @click="nextStep"
+                                class="bg-sky-500 py-2 px-4 rounded-lg  w-3/4 text-white mt-3  hover:bg-sky-500 transition duration-300 hover:-translate-y-1 hover:scale-110 ease-in-out font-medium "
+                                >
+                                Next
+                                </button>
+                                <button v-if="currentStep > 1" type="submit" class="bg-black w-2/4 rounded-xl p-3 text-white mt-3 hover:text-white hover:bg-sky-500 transition duration-300 ease-in-out font-medium ">
+                                    Submit
+                                </button>
+                        </div>
+                        <div>
+                            
+                        </div>
+                        
                     </div>
                 </form>
                 
@@ -98,5 +172,23 @@
 <script>
 export default {
     name: "AuthenticationWalkInBooking",
+    data(){
+        return{
+            currentStep : 1,
+            totalSteps : 2
+        }
+    },
+    methods:{
+        nextStep(){
+            if(this.currentStep < this.totalSteps){
+                this.currentStep++;
+            }
+        },
+        prevStep(){
+            if(this.currentStep > 1){
+                this.currentStep--;
+            }
+        }
+    }
 }
 </script>

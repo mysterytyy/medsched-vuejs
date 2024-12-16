@@ -26,7 +26,7 @@
                         </div>
                     </div>
                     <div class="w-full mt-5">
-                        <button type="submit" class="bg-black w-3/4 rounded-xl p-3 text-white mt-3 hover:text-white hover:bg-sky-500 transition duration-300 hover:-translate-y-1 hover:scale-110 ease-in-out font-medium ">Sign In</button>
+                      <router-link to="/dashboard"><button type="submit" class="bg-black w-3/4 rounded-xl p-3 text-white mt-3 hover:text-white hover:bg-sky-500 transition duration-300 hover:-translate-y-1 hover:scale-110 ease-in-out font-medium ">Sign In</button></router-link>   
                     </div>
                 </form>
                 

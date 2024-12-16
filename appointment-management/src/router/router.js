@@ -5,6 +5,7 @@ import AppointmentPagesWalkInBook from "@/components/AppointmentManagement/Appoi
 import AppointmentPagesMakeAppointment from "@/components/AppointmentManagement/AppointmentPages/AppointmentPagesMakeAppointment.vue";
 import AppointmentPagesDashboard from "@/components/AppointmentManagement/AppointmentPages/AppointmentPagesDashboard.vue";
 import AppointmentPagesCheckAppointment from "@/components/AppointmentManagement/AppointmentPages/AppointmentPagesCheckAppointment.vue";
+import AppointmentPagesBookAppointment from "@/components/AppointmentManagement/AppointmentPages/AppointmentPagesBookAppointment.vue";
 
 const routes = [
     {
@@ -35,6 +36,12 @@ const routes = [
     },
     {
         path: '/appointment',
+        name: 'AppointmentBookAppointment',
+        component: AppointmentPagesBookAppointment
+        
+    },
+    {
+        path: '/scheduledappointment',
         name: 'AppointmentCheckAppointment',
         component: AppointmentPagesCheckAppointment
         

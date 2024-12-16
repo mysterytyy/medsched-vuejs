@@ -8,8 +8,9 @@
 </template>
 
 <script>
-import AppointmentCheckAppointmentView from '../AppointmentCheckAppointment/AppointmentCheckAppointmentView.vue';
+import AppointmentCheckAppointmentView from '../AppointmentMainContainer/AppointmentCheckAppointmentView.vue';
 import AppointmentSidebarView from '../AppointmentSidebar/AppointmentSidebarView.vue';
+
 
 export default {
     name: "AppointmentPagesCheckAppointment",
