@@ -31,6 +31,9 @@ export default {
   color: #2c3e50; /* Dark gray text color */
 }
 
+html, body{
+  overflow-x: hidden;
+}
 
 </style>
 

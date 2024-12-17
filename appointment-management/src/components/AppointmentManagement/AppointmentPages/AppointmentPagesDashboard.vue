@@ -1,7 +1,7 @@
 <template>
-    <div class="flex">
+    <div>
             <AppointmentSidebarView />
-        <main class="ml-64 flex-1 flex justify-center bg-gray-200 h-fit">
+        <main class="ml-64 max-sm:ml-0 flex-1 flex justify-center bg-gray-200 h-fit">
             <AppointmentDashboardView />
         </main>
     </div>

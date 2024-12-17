@@ -1,8 +1,8 @@
 <template>
-    <div class="flex">
+    <div>
         <AppointmentSidebarView />
     </div>
-    <main class="ml-64 flex-1 flex justify-center">
+    <main class="ml-64 max-sm:ml-0 flex-1 flex justify-center">
         <AppointmentCheckAppointmentView />
     </main>
 </template>

@@ -5,7 +5,11 @@ export default {
       "./src/**/*.{vue,js,ts,jsx,tsx}",
     ],
     theme: {
-      extend: {},
+      extend: {
+        backgroundColor:{
+          'bg-aboutus': "url('/public/images/aboutus/bg.jpg')"
+        }
+      },
       fontFamily:{
         'sans': ['Open Sans', 'system-ui'],
         'serif': ['ui-serif', 'Georgia'],

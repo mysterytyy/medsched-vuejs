@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-slate-100 w-4/5 rounded-xl mt-32 shadow-2xl max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center max-sm:w-5/6">
+    <div class="bg-slate-100 w-4/5 rounded-xl mt-32 shadow-2xl max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center max-sm:w-full">
         <div class="p-10 flex flex-row max-sm:flex max-sm:flex-col">
             <div class="flex items-start flex-col justify-around w-3/6 max-sm:w-full max-sm:flex max-sm:justify-center max-sm:p-7">
                 <h1 class="text-6xl font-bold text-left max-sm:text-cyan-500 max-sm:text-base max-sm:hidden lg:hidden">Get Appointment <br> Easy and Fast</h1>

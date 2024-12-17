@@ -1,10 +1,10 @@
 <template>
     <div class="flex flex-col w-full">
-        <div class="mt-10 w-full p-5 flex justify-between ">
-            <div class="w-1/2 flex items-center">
+        <div class="mt-10 w-full p-5 flex justify-between max-sm:flex max-sm:flex-col max-sm:justify-center ">
+            <div class="w-1/2 flex items-center max-sm:w-full">
             <h1 class="text-left font-[Poppins] text-3xl font-bold">Hello, <span class="text-3xl font-bold">{{ name.firstname }} {{ name.lastname }}</span></h1>
         </div>
-        <div class="w-1/4 flex justify-center p-2 rounded-2xl border border-gray-200 cursor-pointer">   
+        <div class="w-1/4 flex justify-center p-2 rounded-2xl border border-gray-200 cursor-pointer max-sm:w-full max-sm:mt-5">   
             <svg class="w-12 h-12" viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"><rect x="-2.4" y="-2.4" width="28.80" height="28.80" rx="14.4" fill="#F3F2F2" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M18 16L16 16M16 16L14 16M16 16L16 14M16 16L16 18" stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path> <path d="M7 4V2.5" stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path> <path d="M17 4V2.5" stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path> <path d="M21.5 9H16.625H10.75M2 9H5.875" stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path> <path d="M14 22H10C6.22876 22 4.34315 22 3.17157 20.8284C2 19.6569 2 17.7712 2 14V12C2 8.22876 2 6.34315 3.17157 5.17157C4.34315 4 6.22876 4 10 4H14C17.7712 4 19.6569 4 20.8284 5.17157C22 6.34315 22 8.22876 22 12V14C22 17.7712 22 19.6569 20.8284 20.8284C20.1752 21.4816 19.3001 21.7706 18 21.8985" stroke="#000000" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
             <div class="flex flex-col ml-2">
                 <p class="text-left font-[Inter] font-bold text-xl">{{ currentDate }}</p>
@@ -13,8 +13,8 @@
         
             </div>
         </div>
-        <div class="flex w-full gap-5 px-3 font-[Poppins] font-normal">
-            <div class="bg-white p-5 w-1/4 shadow-lg rounded-lg flex flex-col ">
+        <div class="flex w-full gap-5 px-3 font-[Poppins] font-normal max-sm:flex max-sm:flex-col">
+            <div class="bg-white p-5 w-1/4 shadow-lg rounded-lg flex flex-col max-sm:w-full ">
                 <div class="flex flex-row">
                     <svg class="w-6 h-6 border-2 rounded-md border-cyan-400 " viewBox="-1.6 -1.6 19.20 19.20" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)"><rect x="-1.6" y="-1.6" width="19.20" height="19.20" rx="1.344" fill="#ffffff" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.064"></g><g id="SVGRepo_iconCarrier"> <path d="M16 1H12V15H16V1Z" fill="#22d3f8"></path> <path d="M6 5H10V15H6V5Z" fill="#22d3f8"></path> <path d="M0 9H4V15H0V9Z" fill="#22d3f8"></path> </g></svg>
                     <h1 class="ml-2">Total Patients</h1>
@@ -25,7 +25,7 @@
                 </div>
             </div>
                 
-            <div class="bg-white p-5 w-1/4 shadow-lg rounded-lg flex flex-col">
+            <div class="bg-white p-5 w-1/4 shadow-lg rounded-lg flex flex-col max-sm:w-full">
                 <div class="flex flex-row">
                     <svg class="w-6 h-6 border-2 rounded-md border-cyan-400 " viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M13 20V18C13 15.2386 10.7614 13 8 13C5.23858 13 3 15.2386 3 18V20H13ZM13 20H21V19C21 16.0545 18.7614 14 16 14C14.5867 14 13.3103 14.6255 12.4009 15.6311M11 7C11 8.65685 9.65685 10 8 10C6.34315 10 5 8.65685 5 7C5 5.34315 6.34315 4 8 4C9.65685 4 11 5.34315 11 7ZM18 9C18 10.1046 17.1046 11 16 11C14.8954 11 14 10.1046 14 9C14 7.89543 14.8954 7 16 7C17.1046 7 18 7.89543 18 9Z" stroke="#22d3ee" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
                     <h1 class="ml-2">Employees</h1></div>
@@ -36,7 +36,7 @@
                 </div>
                 
                 
-            <div class="bg-white p-5 w-1/4 shadow-lg rounded-lg flex flex-col">
+            <div class="bg-white p-5 w-1/4 shadow-lg rounded-lg flex flex-col max-sm:w-full">
                 <div class="flex flex-row">
                     <svg class="w-6 h-6 border-2 rounded-md border-cyan-400 " viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3 10H21M7 3V5M17 3V5M6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z" stroke="#22d3ee" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
                     <h1 class="ml-2">Appointments</h1></div>
@@ -47,7 +47,7 @@
                 </div>
                 </div>
                 
-            <div class="bg-white p-5 w-1/4 shadow-lg rounded-lg flex flex-col">
+            <div class="bg-white p-5 w-1/4 shadow-lg rounded-lg flex flex-col max-sm:w-full">
                 <div class="flex flex-row">
                     <svg class="w-6 h-6 border-2 rounded-md border-cyan-400 " fill="#22d3ee" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M2,14H5V11H2Zm9,0h3V11H11ZM2,5H5V2H2Zm9-3V5h3V2ZM6.5,5h3V2h-3Zm0,9h3V11h-3ZM11,9.5h3v-3H11Zm-4.5,0h3v-3h-3ZM2,9.5H5v-3H2Z"></path> </g> </g></svg>
                     <h1 class="ml-2">Total Services</h1>
@@ -63,11 +63,11 @@
             
             </div>
         </div>
-        <div class="flex justify-evenly mt-10">
-            <div class="bg-white w-3/6 font-[Poppins] shadow-lg rounded-lg">
+        <div class="flex justify-evenly mt-10 max-sm:flex max-sm:flex-col max-sm:p-2">
+            <div class="bg-white w-3/6 font-[Poppins] shadow-lg rounded-lg max-sm:w-full">
                 <div class="flex justify-between items-center">
                     <h1 class="text-left ml-2">Patient's Visited</h1>
-                    <ul class="flex flex-wrap text-sm font-medium text-center text-gray-500 cursor-pointer dark:border-gray-700 dark:text-gray-400">
+                    <ul class="flex flex-nowrap text-sm max-sm:text-xs font-medium text-center text-gray-500 cursor-pointer dark:border-gray-700 dark:text-gray-400">
                         <li class="me-2">
                             <a aria-current="page" class="inline-block p-4 text-blue-600 bg-gray-100 rounded-lg active dark:bg-gray-800 dark:text-blue-500">Monthly</a>
                         </li>
@@ -85,8 +85,8 @@
             </div>
         </div>
 
-            <div class="bg-white w-2/6 font-[Poppins] rounded-lg shadow-lg ">
-                <div class="flex justify-between items-center rounded-lg">
+            <div class="bg-white w-2/6 font-[Poppins] rounded-lg shadow-lg max-sm:w-full max-sm:mt-3">
+                <div class="flex justify-between items-center rounded-lg ">
                     <h1 class="text-left ml-2 ">Patient</h1>
                     <select class="outline-none px-3 py-2 rounded-lg border-gray-200" name="" id="">
                         <option value="">Last 7 days</option>

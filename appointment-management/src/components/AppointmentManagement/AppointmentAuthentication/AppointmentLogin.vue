@@ -1,10 +1,10 @@
 <template>
-    <div class="mt-32 w-full flex justify-center h-full">
-        <div class="w-2/3 bg-[#E3E4E6] rounded-3xl flex shadow-2xl">
-            <div class="w-1/2 bg-[#E3E4E6] z-10 rounded-tl-3xl rounded-bl-3xl rounded-br-3xl ">
-                <img class="rounded-3xl m-4 w-11/12" src="https://img.freepik.com/free-vector/appointment-booking-with-calendar-smartphone_23-2148545727.jpg?t=st=1733992804~exp=1733996404~hmac=c64f58a5924fcaa344dfc7e8f26f9982fef349cdd5c4016d0380eb598cb44722&w=740">
+    <div class="mt-32 w-full flex justify-center h-full max-sm:flex">
+        <div class="w-2/3 bg-[#E3E4E6] rounded-3xl flex shadow-2xl max-sm:flex max-sm:flex-col max-sm:w-full">
+            <div class="w-1/2 bg-[#E3E4E6] z-10 rounded-tl-3xl rounded-bl-3xl rounded-br-3xl max-sm:w-full max-sm:flex max-sm:justify-center max-sm:rounded-none">
+                <img class="rounded-3xl m-4 w-11/12 max-sm:w-full max-sm:p-3" src="https://img.freepik.com/free-vector/appointment-booking-with-calendar-smartphone_23-2148545727.jpg?t=st=1733992804~exp=1733996404~hmac=c64f58a5924fcaa344dfc7e8f26f9982fef349cdd5c4016d0380eb598cb44722&w=740">
             </div>
-            <div class="w-1/2 bg-white h-full ml-18 z-20 rounded-r-3xl rounded-tl-[150px] rounded-bl-[150px] shadow-2xl">
+            <div class="w-1/2 bg-white h-full ml-18 max-sm:z-20 z-20 rounded-r-3xl rounded-tl-[150px] rounded-bl-[150px] shadow-2xl max-sm:rounded-none max-sm:w-full">
                 <h1 class="text-5xl tracking-wider mt-10 font-extrabold">Welcome!</h1>
                 <p class="font-['Noto_Serif'] font-light mt-5">Enter your username and password to access your account</p>
                 <form action="" class="flex flex-col items-center p-3 w-full mt-5">

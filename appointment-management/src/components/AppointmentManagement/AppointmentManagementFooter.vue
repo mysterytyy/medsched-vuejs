@@ -1,12 +1,14 @@
 <template>
-    <div class="bg-[#3b3b3b] flex flex-row p-10 justify-between">
+    <div class="bg-[rgb(59,59,59)] flex flex-row p-10 justify-between max-sm:flex max-sm:flex-col">
         <div class="flex flex-col items-start justify-around p-5 cursor-pointer">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-white w-20 h-20">
+            <div class="max-sm:w-full max-sm:flex max-sm:justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-white w-20 h-20">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0 1 3.75 9.375v-4.5ZM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 0 1-1.125-1.125v-4.5ZM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0 1 13.5 9.375v-4.5Z" />
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 6.75h.75v.75h-.75v-.75ZM6.75 16.5h.75v.75h-.75v-.75ZM16.5 6.75h.75v.75h-.75v-.75ZM13.5 13.5h.75v.75h-.75v-.75ZM13.5 19.5h.75v.75h-.75v-.75ZM19.5 13.5h.75v.75h-.75v-.75ZM19.5 19.5h.75v.75h-.75v-.75ZM16.5 16.5h.75v.75h-.75v-.75Z" />
             </svg>
-            <h1 class="text-white text-sm font-['Noto_Serif'] font-light text-left mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatum praesentium <br> tenetur provident ducimus vel, autem laudantium, sequi error et aspernatur odit optio odio,<br> aliquam explicabo eius  vero laboriosam doloribus.</h1>
-            <div class="flex gap-2 justify-start mt-5">
+            </div>
+            <h1 class="text-white text-sm font-['Noto_Serif'] font-light text-left mt-5 max-sm:text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatum praesentium <br> tenetur provident ducimus vel, autem laudantium, sequi error et aspernatur odit optio odio,<br> aliquam explicabo eius  vero laboriosam doloribus.</h1>
+            <div class="flex gap-2 justify-start mt-5 max-sm:w-full max-sm:flex max-sm:justify-center">
                 <svg class="w-12 h-12 border-solid border-2 rounded-xl text-white dark:text-white p-2 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                     <path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/>
                 </svg>

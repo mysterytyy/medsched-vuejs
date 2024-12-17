@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="max-sm:overflow-x-auto">
         <table class="w-full text-gray-500 text-base">
             <thead class="text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 font-[Inter]">
                 <tr>

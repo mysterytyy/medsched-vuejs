@@ -1,6 +1,6 @@
 <template>  
         <AppointmentManagementHeader />
-    <main class="flex flex-col justify-center items-center">
+    <main class="flex flex-col justify-center items-center ">
         <AppointmentManagementMain />
     </main>
 </template>

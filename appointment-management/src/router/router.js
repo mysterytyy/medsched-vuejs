@@ -6,6 +6,7 @@ import AppointmentPagesMakeAppointment from "@/components/AppointmentManagement/
 import AppointmentPagesDashboard from "@/components/AppointmentManagement/AppointmentPages/AppointmentPagesDashboard.vue";
 import AppointmentPagesCheckAppointment from "@/components/AppointmentManagement/AppointmentPages/AppointmentPagesCheckAppointment.vue";
 import AppointmentPagesBookAppointment from "@/components/AppointmentManagement/AppointmentPages/AppointmentPagesBookAppointment.vue";
+import AppointmentPagesAboutUs from "@/components/AppointmentManagement/AppointmentPages/AppointmentPagesAboutUs.vue";
 
 const routes = [
     {
@@ -46,6 +47,11 @@ const routes = [
         component: AppointmentPagesCheckAppointment
         
     },
+    {
+        path: '/aboutus',
+        name: 'AppointmentAboutUs',
+        component: AppointmentPagesAboutUs
+    }
 
 
 ];
